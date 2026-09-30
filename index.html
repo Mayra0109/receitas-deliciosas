@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receitas Caseiras</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">🍲 Receitas Caseiras</div>
+        <nav>
+          <a href="#inicio">Início</a>
+          <a href="#receitas">Receitas</a>
+          <a href="#categorias">Categorias</a>
+          <a href="#sobre">Sobre</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="tag">Receitas simples e gostosas</span>
+            <h1>Sabores que fazem a casa cheirar bem</h1>
+            <p>
+              Descubra receitas caseiras fáceis, saborosas e perfeitas para o
+              dia a dia.
+            </p>
+            <div class="search-box">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar receita..."
+              />
+              <button id="searchBtn">Buscar</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card-image">🍰</div>
+            <h3>Receita do Dia</h3>
+            <p>Bolo de chocolate fofinho com cobertura cremosa.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="categorias" class="categories">
+        <div class="container">
+          <h2>Categorias</h2>
+          <div class="category-list" id="categoryList">
+            <button class="cat-btn active" data-category="todas">Todas</button>
+            <button class="cat-btn" data-category="doces">Doces</button>
+            <button class="cat-btn" data-category="salgados">Salgados</button>
+            <button class="cat-btn" data-category="bebidas">Bebidas</button>
+            <button class="cat-btn" data-category="sobremesas">Sobremesas</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="receitas" class="recipes">
+        <div class="container">
+          <h2>Receitas</h2>
+          <div class="recipe-grid" id="recipeGrid"></div>
+        </div>
+      </section>
+
+      <section id="sobre" class="about">
+        <div class="container about-box">
+          <h2>Sobre o nosso site</h2>
+          <p>
+            Aqui você encontra receitas caseiras com preparo simples, ingredientes
+            acessíveis e explicações fáceis de seguir. É um espaço para quem ama
+            cozinhar em casa e compartilhar o sabor da família.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div id="recipeModal" class="modal hidden">
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal">×</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Receitas Caseiras</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
