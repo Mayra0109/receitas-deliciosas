@@ -221,11 +221,32 @@ nav a {
 }
 
 .recipe-image {
+  position: relative;
   height: 180px;
   display: grid;
   place-items: center;
+  overflow: hidden;
   background: linear-gradient(135deg, #ffd7c7, #ffb08a);
   font-size: 4rem;
+}
+
+.recipe-image img,
+.modal-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+
+.recipe-emoji,
+.modal-emoji {
+  display: none;
+  position: absolute;
+  inset: 0;
+  place-items: center;
+  background: linear-gradient(135deg, #ffd7c7, #ffb08a);
 }
 
 .recipe-body {
@@ -312,9 +333,12 @@ nav a {
   font-size: 2rem;
   cursor: pointer;
   color: var(--text);
+  z-index: 1;
 }
 
 .modal-hero {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, #ffd7c7, #ffb08a);
   height: 220px;
   border-radius: 18px;
