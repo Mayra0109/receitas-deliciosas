@@ -264,6 +264,98 @@ const receitas = [
       'Distribua o recheio nas forminhas sem encher até a borda.',
       'Asse em forno preaquecido a 180 °C por 25 a 30 minutos, até o recheio firmar e dourar.'
     ]
+  },
+  {
+    id: 12,
+    titulo: 'Limonada Refrescante',
+    categoria: 'bebidas',
+    emoji: '🍋',
+    descricao: 'Uma bebida cítrica, leve e perfeita para dias quentes.',
+    tempo: '10 min',
+    dificuldade: 'Fácil',
+    ingredientes: [
+      '3 limões',
+      '1/2 xícara de açúcar',
+      '500 ml de água gelada',
+      'Gelo a gosto',
+      'Folhas de hortelã (opcional)'
+    ],
+    preparo: [
+      'Esprema os limões e coe o suco.',
+      'Misture com o açúcar e uma parte da água até dissolver bem.',
+      'Adicione o restante da água e o gelo.',
+      'Finalize com hortelã, se quiser.',
+      'Sirva imediatamente bem gelada.'
+    ]
+  },
+  {
+    id: 13,
+    titulo: 'Milkshake de Morango',
+    categoria: 'bebidas',
+    emoji: '🥤',
+    descricao: 'Cremoso, doce e irresistível para um lanche rápido.',
+    tempo: '10 min',
+    dificuldade: 'Fácil',
+    ingredientes: [
+      '2 xícaras de morangos',
+      '2 bolas de sorvete de baunilha',
+      '1 xícara de leite',
+      '1 colher de sopa de açúcar',
+      'Gelo a gosto'
+    ],
+    preparo: [
+      'Lave os morangos e retire os cabinhos.',
+      'Coloque no liquidificador com o leite, o açúcar e o gelo.',
+      'Bata até ficar bem cremoso.',
+      'Adicione o sorvete e bata rapidamente só para misturar.',
+      'Sirva em copo alto com canudo.'
+    ]
+  },
+  {
+    id: 14,
+    titulo: 'Chá Gelado de Hortelã',
+    categoria: 'bebidas',
+    emoji: '🍃',
+    descricao: 'Refrescante, aromático e muito fácil de preparar.',
+    tempo: '15 min + gelar',
+    dificuldade: 'Fácil',
+    ingredientes: [
+      '1 litro de água',
+      '3 saquinhos de chá',
+      '1 punhado de folhas de hortelã',
+      '1/4 de xícara de açúcar ou mel',
+      'Gelo'
+    ],
+    preparo: [
+      'Ferva a água e adicione os saquinhos de chá e as folhas de hortelã.',
+      'Deixe descansar por 10 minutos.',
+      'Coe e misture com o açúcar ou mel.',
+      'Deixe esfriar e leve à geladeira.',
+      'Sirva com gelo e mais hortelã.'
+    ]
+  },
+  {
+    id: 15,
+    titulo: 'Vitamina de Banana com Cacau',
+    categoria: 'bebidas',
+    emoji: '🍌',
+    descricao: 'Uma opção nutritiva, saborosa e ideal para o café da manhã.',
+    tempo: '8 min',
+    dificuldade: 'Fácil',
+    ingredientes: [
+      '2 bananas maduras',
+      '1 xícara de leite',
+      '1 colher de sopa de cacau em pó',
+      '1 colher de sopa de mel',
+      'Gelo opcional'
+    ],
+    preparo: [
+      'Coloque todos os ingredientes no liquidificador.',
+      'Bata até ficar homogêneo e cremoso.',
+      'Ajuste o açúcar, se precisar.',
+      'Se quiser mais refrescante, adicione gelo.',
+      'Sirva em seguida.'
+    ]
   }
 ];
 
