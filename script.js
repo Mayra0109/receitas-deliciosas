@@ -120,7 +120,7 @@ const receitas = [
     titulo: 'Mousse de Chocolate',
     categoria: 'sobremesas',
     emoji: '🍮',
-    descricao: 'Levissima e cremosa, perfeita para fechar a refeição com estilo.',
+    descricao: 'Levíssima e cremosa, perfeita para fechar a refeição com estilo.',
     tempo: '15 min + gelar',
     dificuldade: 'Fácil',
     ingredientes: [
@@ -135,6 +135,134 @@ const receitas = [
       'Misture o chocolate e o creme de leite.',
       'Incorpore as claras em neve.',
       'Leve à geladeira por pelo menos 2 horas.'
+    ]
+  },
+  {
+    id: 7,
+    titulo: 'Pudim de Leite Condensado',
+    categoria: 'sobremesas',
+    emoji: '🍮',
+    descricao: 'Pudim clássico, lisinho e com calda de caramelo feita em casa.',
+    tempo: '1 h 20 min + gelar',
+    dificuldade: 'Média',
+    ingredientes: [
+      '1 lata de leite condensado',
+      '2 medidas da lata de leite',
+      '3 ovos',
+      '1 xícara de açúcar para a calda',
+      '1/3 de xícara de água quente para a calda'
+    ],
+    preparo: [
+      'Derreta o açúcar em fogo baixo até formar um caramelo dourado. Com cuidado, acrescente a água quente e mexa até dissolver.',
+      'Espalhe a calda numa forma de pudim e reserve.',
+      'Bata o leite condensado, o leite e os ovos apenas até misturar. Despeje na forma caramelizada.',
+      'Cubra com papel-alumínio e asse em banho-maria a 180 °C por cerca de 1 hora, até firmar.',
+      'Deixe esfriar, leve à geladeira por pelo menos 4 horas e desenforme.'
+    ]
+  },
+  {
+    id: 8,
+    titulo: 'Risoles de Queijo e Presunto',
+    categoria: 'salgados',
+    emoji: '🥟',
+    descricao: 'Salgadinho crocante por fora e recheado com queijo e presunto.',
+    tempo: '1 h',
+    dificuldade: 'Média',
+    ingredientes: [
+      '2 xícaras de leite',
+      '2 xícaras de farinha de trigo',
+      '1 colher de sopa de manteiga',
+      'Sal a gosto',
+      '150 g de queijo muçarela picado',
+      '150 g de presunto picado',
+      '1 ovo batido e farinha de rosca para empanar',
+      'Óleo para fritar'
+    ],
+    preparo: [
+      'Aqueça o leite com a manteiga e o sal. Quando começar a ferver, despeje a farinha de uma vez e mexa até a massa desgrudar da panela.',
+      'Deixe a massa amornar e sove numa superfície limpa até ficar lisa.',
+      'Abra a massa, corte círculos e recheie com queijo e presunto. Dobre ao meio e aperte bem as bordas.',
+      'Passe cada risole no ovo batido e depois na farinha de rosca.',
+      'Frite em óleo quente, em pequenas porções, até dourar. Escorra em papel-toalha.'
+    ]
+  },
+  {
+    id: 9,
+    titulo: 'Empada de Frango',
+    categoria: 'salgados',
+    emoji: '🥧',
+    descricao: 'Empadinhas de massa amanteigada com recheio cremoso de frango.',
+    tempo: '1 h 15 min',
+    dificuldade: 'Média',
+    ingredientes: [
+      '3 xícaras de farinha de trigo',
+      '150 g de manteiga gelada em cubos',
+      '1 ovo',
+      '1/2 colher de chá de sal',
+      '2 a 3 colheres de sopa de água gelada',
+      '2 xícaras de frango cozido e desfiado',
+      '1/2 cebola picada',
+      '1/2 xícara de milho',
+      '1/2 xícara de requeijão',
+      '1 gema para pincelar'
+    ],
+    preparo: [
+      'Misture a farinha e o sal com a manteiga até formar uma farofa. Junte o ovo e a água aos poucos, apenas até a massa ficar unida. Leve à geladeira por 20 minutos.',
+      'Refogue a cebola, acrescente o frango e o milho. Desligue o fogo, misture o requeijão e espere o recheio esfriar.',
+      'Forre forminhas com parte da massa, coloque o recheio frio e cubra com o restante da massa, fechando as bordas.',
+      'Pincele com a gema e asse em forno preaquecido a 180 °C por 25 a 30 minutos, até dourar.',
+      'Espere amornar antes de desenformar.'
+    ]
+  },
+  {
+    id: 10,
+    titulo: 'Pão de Queijo de Forno',
+    categoria: 'salgados',
+    emoji: '🧀',
+    descricao: 'Pãezinhos de queijo quentinhos, dourados por fora e macios por dentro.',
+    tempo: '40 min',
+    dificuldade: 'Fácil',
+    ingredientes: [
+      '500 g de polvilho azedo',
+      '1 xícara de leite',
+      '1/2 xícara de óleo',
+      '1 colher de chá de sal',
+      '2 ovos',
+      '2 xícaras de queijo meia-cura ou parmesão ralado'
+    ],
+    preparo: [
+      'Aqueça o leite com o óleo e o sal até começar a ferver. Despeje sobre o polvilho e misture com uma colher. Deixe amornar.',
+      'Acrescente os ovos, um de cada vez, misturando bem. Junte o queijo e amasse até obter uma massa modelável.',
+      'Unte as mãos, faça bolinhas e disponha numa assadeira, deixando espaço entre elas.',
+      'Asse em forno preaquecido a 200 °C por 20 a 25 minutos, até crescerem e dourarem.'
+    ]
+  },
+  {
+    id: 11,
+    titulo: 'Miniquiche de Alho-poró',
+    categoria: 'salgados',
+    emoji: '🥧',
+    descricao: 'Quiche delicada com alho-poró e queijo, ótima para um lanche ou entrada.',
+    tempo: '55 min',
+    dificuldade: 'Média',
+    ingredientes: [
+      '1 e 1/2 xícara de farinha de trigo',
+      '100 g de manteiga gelada',
+      '1 ovo',
+      '1 pitada de sal',
+      '1 alho-poró fatiado',
+      '2 ovos para o recheio',
+      '1/2 xícara de creme de leite',
+      '1/2 xícara de queijo ralado',
+      '1 colher de sopa de azeite',
+      'Sal e pimenta a gosto'
+    ],
+    preparo: [
+      'Misture a farinha, a manteiga, o ovo e o sal até formar uma massa. Forre forminhas pequenas e leve à geladeira por 15 minutos.',
+      'Refogue o alho-poró no azeite até ficar macio e deixe amornar.',
+      'Bata os 2 ovos com o creme de leite, o queijo, sal e pimenta. Misture o alho-poró.',
+      'Distribua o recheio nas forminhas sem encher até a borda.',
+      'Asse em forno preaquecido a 180 °C por 25 a 30 minutos, até o recheio firmar e dourar.'
     ]
   }
 ];
