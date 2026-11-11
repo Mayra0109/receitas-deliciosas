@@ -840,15 +840,14 @@ const closeModal = document.getElementById('closeModal');
 let activeCategory = 'todas';
 
 function getRecipeImageUrl(recipe) {
-  const query = encodeURIComponent(
-    recipe.titulo
-      .normalize('NFD')
-      .replace(/\p{Diacritic}/gu, '')
-      .replace(/[^a-zA-Z0-9 ]/g, '')
-      .trim()
-  );
+  const normalized = recipe.titulo
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-zA-Z0-9 ]/g, ' ')
+    .trim()
+    .replace(/\s+/g, '+');
 
-  return `https://source.unsplash.com/featured/800x600/?${query}`;
+  return `https://source.unsplash.com/featured/800x600/?${normalized}`;
 }
 
 function renderRecipes(list) {
@@ -860,7 +859,12 @@ function renderRecipes(list) {
 
     card.innerHTML = `
       <div class="recipe-image">
-        <img src="${getRecipeImageUrl(recipe)}" alt="${recipe.titulo}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+        <img
+          src="${getRecipeImageUrl(recipe)}"
+          alt="${recipe.titulo}"
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+        />
         <span class="recipe-emoji">${recipe.emoji}</span>
       </div>
       <div class="recipe-body">
@@ -900,7 +904,11 @@ function filterRecipes() {
 function openModal(recipe) {
   modalBody.innerHTML = `
     <div class="modal-hero">
-      <img src="${getRecipeImageUrl(recipe)}" alt="${recipe.titulo}" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+      <img
+        src="${getRecipeImageUrl(recipe)}"
+        alt="${recipe.titulo}"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+      />
       <span class="modal-emoji">${recipe.emoji}</span>
     </div>
     <h3>${recipe.titulo}</h3>
